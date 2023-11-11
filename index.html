@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- website logo -->
+    <link rel="Website Icon"  type="png" href="images/logo/PngItem_4852378.png">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/Style.css">
+    <!-- bootstrap link (css) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- bootstrap link (js) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome liprary -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Aos liprary -->
+    <link href="css/aos.css" rel="stylesheet">
+    <title>News-Web</title>
+</head>
+<body dir="rtl">
+<!-- Start-Header -->
+<header dir="ltr" class="nav-down">
+<nav class="navbar navbar-expand-lg fixed-top" aria-label="Offcanvas navbar large">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/logo/PngItem_4852378.png" width="90px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div  class="offcanvas-header">
+          <h5  class="offcanvas-title" id="offcanvasNavbar2Label"> القائمه الرئيسيه</h5>
+          <button type="button" class="btn-close btn-close-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a id="dark-link" class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
+            </li>
+           <li class="nav-item">
+          <a id="dark-link" class="nav-link active" aria-current="page" href="#">الرياضه</a>
+        </li>
+        <li class="nav-item">
+          <a id="dark-link" class="nav-link active" aria-current="page" href="#">الثقافه</a>
+        </li>
+        <li class="nav-item">
+          <a id="dark-link" class="nav-link active" aria-current="page" href="index-news.html">السياسه</a>
+        </li>
+        <li dir="rtl" class="nav-item dropdown">
+          <a id="dark-link" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            علوم
+          </a>
+          <ul class="dropdown-menu">
+            <li><a id="dark-link" class="dropdown-item" href="#">اخر الاخبار</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a id="dark-link" class="dropdown-item" href="#">تكنولوجيا</a></li>
+            <li><a id="dark-link" class="dropdown-item" href="#">الذكاء الاصطناعي</a></li>
+          </ul>
+        </li>
+        <li dir="rtl" class="nav-item dropdown">
+          <a id="dark-link" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            فيديو
+          </a>
+          <ul class="dropdown-menu">
+            <li><a id="dark-link" class="dropdown-item" href="#">احدث الفيديوهات</a></li>
+            <li><a id="dark-link" class="dropdown-item" href="#">الاكثر تفاعلا</a></li>
+            <li><a id="dark-link" class="dropdown-item" href="#">سوشيال فيديو</a></li>
+          </ul>
+        </li>
+            <li class="nav-item d-flex nav-mode">
+              <label class="dark-p" for="checkbox">الوضع الفاتح والغامق</label>
+              <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="checkbox-label">
+                <img src="images/icons/sun.png" alt="sun">
+                <i class="fa-solid fa-moon"></i>
+                <span class="ball"></span>
+              </label>
+          </li>
+          </ul>  
+        </div>
+      </div>
+    </div>
+    </nav>
+  </header>
+      <!-- End-Header -->
+
+<!-- start Banner -->
+<div id="carouselExampleControls" data-bs-interval="3000" class="carousel slide carousel-fade" data-bs-ride="carousel" style="margin-top: 71px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/Banners/bunner1.jpg" class="d-block w-100" alt="Banner">
+      <div class="carousel-caption" style="background-color: #000000a2; border-radius: 5px;">
+        <a href="index-news.html" style="text-decoration: none; color: #fff; font-size: 20px; font-weight: 700; padding: 3px 10px;">محمد صلاح يدعم غزة ويوجه الرسالة للكيان الصهيوني لوقف هذه الحرب <span style="color: #02d5af;">اعرف اكثر..</span></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/Banners/bunner2.jpg" class="d-block w-100" alt="Banner">
+      <div class="carousel-caption" style="background-color: #000000a2; border-radius: 5px;">
+        <a href="index-news.html" style="text-decoration: none; color: #fff; font-size: 20px; font-weight: 700; padding: 3px 10px;"> بعد شهر على حرب غزة.. الفاتورة الاقتصادية تتصاعد في فلسطين <span style="color: #02d5af;">اعرف اكثر..</span></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/Banners/bunner3.jpg" class="d-block w-100" alt="Banner">
+      <div class="carousel-caption" style="background-color: #000000a2; border-radius: 5px;">
+        <a href="index-news.html" style="text-decoration: none; color: #fff; font-size: 20px; font-weight: 700; padding: 3px 10px;"> قصف إسرائيلي يستهدف تل الهوى وحي الزيتون في غزة <span style="color: #02d5af;">اعرف اكثر..</span></a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- End Banner -->
+
+<!-- start the most important news-->
+<div class="text-center my-2 p-4" id="about">
+  <h2 data-aos="zoom-in"><span>اهم</span> الاخبار <i class="fas fa-newspaper" style="font-weight: 100;"></i></h2>
+  <hr>
+</div>
+
+<section class="articles my-5">
+  <article data-aos="fade-up" data-aos-duration="1000">
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+        </div>
+    </div>
+    <p class="uploaded-time"><i class="fa-regular fa-clock"></i> 8 نوفمبر 2023</p>
+
+  </article>
+  <article data-aos="fade-up" data-aos-duration="1500">
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://picsum.photos/id/1005/800/450" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+        </a>
+      </div>
+    </div>
+    <p class="uploaded-time"><i class="fa-regular fa-clock"></i> 8 نوفمبر 2023</p>
+  </article>
+  <article data-aos="fade-up" data-aos-duration="2000">
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://picsum.photos/id/103/800/450" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+    <p class="uploaded-time"><i class="fa-regular fa-clock"></i> 8 نوفمبر 2023</p>
+
+  </article>
+  <article data-aos="fade-up" data-aos-duration="2500">
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://picsum.photos/id/103/800/450" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+    <p class="uploaded-time"><i class="fa-regular fa-clock"></i> 8 نوفمبر 2023</p>
+
+  </article>
+</section>
+
+<!--start minicards section -->
+<section class="articles-mini justify-content-center">
+  <article class="article-mini" data-aos="fade-up">
+    <div class="article-wrapper-mini">
+      <figure class="figure-mini">
+        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+      </figure>
+      <div class="article-body-mini">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="article-mini" data-aos="fade-up">
+    <div class="article-wrapper-mini">
+      <figure class="figure-mini">
+        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+      </figure>
+      <div class="article-body-mini">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="article-mini" data-aos="fade-up">
+    <div class="article-wrapper-mini">
+      <figure class="figure-mini">
+        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+      </figure>
+      <div class="article-body-mini">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+  </article>
+</section>
+<!-- End minicards section -->
+<!-- end the most important news-->
+
+<!-- start the sports section-->
+<div class="text-center my-2 p-4" id="about">
+  <h2 data-aos="zoom-in">الرياضه <i class="fa-solid fa-person-running fa-lg" style="color: green;"></i></h2>
+  <hr>
+</div>
+<section class="articles my-5">
+  <article data-aos="fade-up" data-aos-duration="1000">
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+      </div>
+    </div>
+    <p class="uploaded-time"><i class="fa-regular fa-clock"></i> 8 نوفمبر 2023</p>
+
+  </article>
+  <article data-aos="fade-up" data-aos-duration="1500">
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://picsum.photos/id/1005/800/450" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+    <p class="uploaded-time"><i class="fa-regular fa-clock"></i> 8 نوفمبر 2023</p>
+
+  </article>
+  <article data-aos="fade-up" data-aos-duration="2000">
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://picsum.photos/id/103/800/450" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+    <p class="uploaded-time"><i class="fa-regular fa-clock"></i> 8 نوفمبر 2023</p>
+
+  </article>
+  <article data-aos="fade-up" data-aos-duration="2500">
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://picsum.photos/id/103/800/450" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر<span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+        </a>
+      </div>
+    </div>
+        <p class="uploaded-time"><i class="fa-regular fa-clock"></i> 8 نوفمبر 2023</p>
+
+  </article>
+</section>
+
+<!--start minicards section -->
+<section class="articles-mini justify-content-center">
+  <article class="article-mini" data-aos="fade-up">
+    <div class="article-wrapper-mini">
+      <figure class="figure-mini">
+        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+      </figure>
+      <div class="article-body-mini">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="article-mini" data-aos="fade-up">
+    <div class="article-wrapper-mini">
+      <figure class="figure-mini">
+        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+      </figure>
+      <div class="article-body-mini">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="article-mini" data-aos="fade-up">
+    <div class="article-wrapper-mini">
+      <figure class="figure-mini">
+        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+      </figure>
+      <div class="article-body-mini">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+  </article>
+</section>
+<!-- End minicards section -->
+
+
+<!-- End the sports section-->
+
+<!-- start the culture section-->
+<div data-aos="zoom-in" class="text-center my-2 p-4" id="about">
+  <h2>الثقافه <i class="fa-solid fa-book-open"></i></h2>
+  <hr>
+</div>
+<section class="articles my-5">
+  <article data-aos="fade-up" data-aos-duration="1000">
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+      </div>
+    </div>
+    <p class="uploaded-time"><i class="fa-regular fa-clock"></i> 8 نوفمبر 2023</p>
+
+  </article>
+  <article data-aos="fade-up" data-aos-duration="1500">
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://picsum.photos/id/1005/800/450" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+    <p class="uploaded-time"><i class="fa-regular fa-clock"></i> 8 نوفمبر 2023</p>
+
+  </article>
+  <article data-aos="fade-up" data-aos-duration="2000">
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://picsum.photos/id/103/800/450" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+    <p class="uploaded-time"><i class="fa-regular fa-clock"></i> 8 نوفمبر 2023</p>
+  </article>  
+  <article data-aos="fade-up" data-aos-duration="2500">
+
+    <div class="article-wrapper">
+      <figure>
+        <img src="https://picsum.photos/id/103/800/450" alt="" />
+      </figure>
+      <div class="article-body">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+        </a>
+      </div>
+    </div>
+    <p class="uploaded-time"><i class="fa-regular fa-clock"></i> 8 نوفمبر 2023</p>
+  </article>
+</section>
+<!--start minicards section -->
+
+<section class="articles-mini my-4 justify-content-center">
+  <article class="article-mini" data-aos="fade-up">
+    <div class="article-wrapper-mini">
+      <figure class="figure-mini">
+        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+      </figure>
+      <div class="article-body-mini">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="article-mini" data-aos="fade-up">
+    <div class="article-wrapper-mini">
+      <figure class="figure-mini">
+        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+      </figure>
+      <div class="article-body-mini">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="article-mini" data-aos="fade-up">
+    <div class="article-wrapper-mini">
+      <figure class="figure-mini">
+        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+      </figure>
+      <div class="article-body-mini">
+        <h2>عنوان الخبر</h2>
+        <p>
+          نبذة عن الخبر هي تلخيص قصير ومختصر للأحداث الرئيسية والمعلومات الأساسية المتعلقة بخبر محدد. تهدف النبذة إلى توفير نظرة سريعة وموجزة عن مضمون الخبر وتوجيه القارئ للمعلومات الرئيسية بطريقة موجزة ومفهومة. 
+        </p>
+        <a href="#" class="read-more">
+          اقرأ أكثر <span class="sr-only">about this is some title</span>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#02866e}</style><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>        </a>
+
+        </a>
+      </div>
+    </div>
+  </article>
+</section>
+<!-- End minicards section -->
+<!-- End the culture section-->
+
+<!-- start the video section-->
+<div class="container-fluid" style="background-color: #232323;">
+  <div class="text-center pt-3" id="about">
+    <h2 data-aos="zoom-in" style="font-size: 50px;" class="text-white">فيديو <i class="fa-solid fa-video" style="font-size: 40px; color: rgb(255, 0, 0);"></i></h2>
+    <hr class="hr-video">
+  </div> 
+   <div class="row d-flex justify-content-center" style=" padding-top: 3rem; padding-bottom: 2rem;">
+  <div class="col-md-9">
+    <div class="gallery">
+      <div>
+        <iframe src="https://www.youtube.com/embed/EaxZotFyuqM?si=kLaOQ4P9B0vWUBUE" allowfullscreen frameborder="0" name="tab"></iframe>
+      </div>
+      <div>
+        <span>
+        <a style="text-decoration: none; display: flex;  background-color: #2d2d2d;" href="https://www.youtube.com/embed/AHrcBagU_pk?si=bPLUl7b7wVFDpEca?rel=0&autoplay=1" target="tab"><img src="https://i.ytimg.com/vi/AHrcBagU_pk/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCNFFAzjGAzm6oyGKLq6NKxUU0upg" title="ظهور حفره كبيره في بوابة العالم السفلي"                   width="180" height="100"><p>ظهور حفره كبيره في بوابة العالم السفلي</p></a>
+        <a style="text-decoration: none; display: flex;  background-color: #2d2d2d;" href="https://www.youtube.com/embed/Rd2ENjM4A78?si=WBAZlkiTvikxUZl-?rel=0&autoplay=1" target="tab"><img src="https://i.ytimg.com/vi/Rd2ENjM4A78/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDTX81_BjyD-pxtAN0aD6Pv-ByzbQ" title="واشنطن ترفع السريه عن الاجسام الطائره"                     width="180" height="100"><p>واشنطن ترفع السريه عن الاجسام الطائره</p></a>
+        <a style="text-decoration: none; display: flex;  background-color: #2d2d2d;" href="https://www.youtube.com/embed/3Vb9O_uY4Ck?si=SxI6pVP-Oyz-z-DO?rel=0&autoplay=1" target="tab"><img src="https://i.ytimg.com/vi/3Vb9O_uY4Ck/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAVaZt4wA5MNdzHhmMP7CjLewXjUg" title="اخر 9 دقائق في حياة جندي اوكراني فيديو"                   width="177" height="100"><p>اخر 9 دقائق في حياة جندي اوكراني </p></a>
+        <a style="text-decoration: none; display: flex;  background-color: #2d2d2d;" href="https://www.youtube.com/embed/zrgc1tsQ1Cg?si=tooA0ya-WgrnnRCK?rel=0&autoplay=1" target="tab"><img src="https://i.ytimg.com/vi/zrgc1tsQ1Cg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAN3GDkOqH8BJJDSRcR-ZEzv_xJpg" title="هل تورط سلاح امريكا السري في زلزال المغرب واعصار ليبيا؟"  width="180" height="100"><p>هل تورط سلاح امريكا السري في زلزال المغرب واعصار ليبيا</p></a>
+        <a style="text-decoration: none; display: flex;  background-color: #2d2d2d;" href="https://www.youtube.com/embed/Ttg3l4vsHbw?si=5z8zjP5HlYZivsy1?rel=0&autoplay=1" target="tab"><img src="https://i.ytimg.com/vi/Ttg3l4vsHbw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDXmwEMYOciBeSFAWzkJ6hNbWQRZw" title="تصريحات السيسي حول هدم مصر"                                width="180" height="100"><p>تصريحات السيسي حول هدم مصر</p></a>
+        <a style="text-decoration: none; display: flex;  background-color: #2d2d2d;" href="https://www.youtube.com/embed/5lv9H7ceLEM?si=7jeIoF_DPuH4BwJ1?rel=0&autoplay=1" target="tab"><img src="https://i.ytimg.com/vi/5lv9H7ceLEM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAHZVzfMu9FH4gPODwrxGJn-bw3Dg" title="من يقدر علي السيسي!"                                        width="180" height="100"><p> من يقدر علي السيسي!</p></a>
+        <a style="text-decoration: none; display: flex;  background-color: #2d2d2d;" href="https://www.youtube.com/embed/EaxZotFyuqM?si=kLaOQ4P9B0vWUBUE?rel=0&autoplay=1" target="tab"><img src="https://i.ytimg.com/vi/EaxZotFyuqM/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAbMsQgQx8CimEaSbe_TgYG6REGOA" title="سقوط مدن اوكرانية الكبري"                                   width="180" height="100"><p>سقوط مدن اوكرانية الكبري</p></a>
+      </span>
+      </div>
+    </div>  
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- End the video section-->
+
+<!-- End the Latest news section-->
+<div class="container-fluid">
+  <div class="row my-5 ">
+    <div class="text-center my-2 " id="about">
+      <h2 data-aos="zoom-in">اخر الاخبار <i class="fa-solid fa-clock"></i></h2>
+      <hr>
+      <div dir="ltr" class="container-fluid mt-3">
+        <div class="row text-center">
+          <div class="col-12">
+            <div  data-aos="fade-up" data-aos-duration="1000" class="d-flex flex-row justify-content-center i-color ">
+              <i  class="fa-solid fa-clock clock-size"></i><h3 id="time" class="time"></h3>
+              <i  class="fa-solid fa-calendar-days"></i><h3  id="date" class="date"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Marquee" style="background-color:#0f272d;">
+      <div class="Marquee-content">
+        <div class="Marquee-tag px-3">
+          <img src="images/news-loop/img-loop.png" width="180" height="100">
+        </div>
+        <div class="Marquee-tag px-3">
+        <img src="images/news-loop/img-loop.png" width="180" height="100"></div>
+        <div class="Marquee-tag">
+          <img src="images/news-loop/img-loop.png" width="180" height="100">
+        </div>
+        <div class="Marquee-tag px-3">
+          <img src="images/news-loop/img-loop.png" width="180" height="100">
+        </div>
+        <div class="Marquee-tag px-3">
+          <img src="images/news-loop/img-loop.png" width="180" height="100">
+        </div>
+        <div class="Marquee-tag px-3">
+          <img src="images/news-loop/img-loop.png" width="180" height="100">
+        </div>
+        <div class="Marquee-tag px-3">
+          <img src="images/news-loop/img-loop.png" width="180" height="100">
+        </div>
+        <div class="Marquee-tag px-3">
+          <img src="images/news-loop/img-loop.png" width="180" height="100">
+        </div>
+        <div class="Marquee-tag px-3">
+          <img src="images/news-loop/img-loop.png" width="180" height="100">
+        </div>
+        <div class="Marquee-tag px-3">
+          <img src="images/news-loop/img-loop.png" width="180" height="100">
+        </div>
+        <div class="Marquee-tag px-3">
+          <img src="images/news-loop/img-loop.png" width="180" height="100">
+        </div>
+        <div class="Marquee-tag px-3">
+          <img src="images/news-loop/img-loop.png" width="180" height="100">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Start the latest news section-->
+
+
+
+<!-- Scroll Top Button -->
+<button class="scrollToTopBtn"><i class="fa-solid fa-angle-up"></i></button>
+<!-- Start Footer -->
+<footer dir="ltr">
+  <div class="footer">
+  <div class="row2">
+  <a href="https://www.facebook.com/1M.Gawad1"><i class="fa-brands fa-facebook" style="color: blue;" ></i></a>
+  <a href="https://www.instagram.com/magdygawad2007/"><i class="fa-brands fa-instagram" style="color:red;"></i></a>
+  <a href="https://github.com/Magdy-Ma7moud"><i class="fa-brands fa-github" style="color: white;"></i></a>
+  <a href="https://wa.me/+201120019793"><i class="fa-brands fa-whatsapp" style="color: rgb(0, 255, 0);"></i></a>
+  </div>
+  <div class="row2">
+     © 2023 | All rights reserved || Designed By: <a href="https://magdy-ma7moud.github.io/Portfolio-Magdy-Mahmoud/" target="_blank" style="color: white; text-decoration: none;"><b>Magdy Mahmoud</b></a>
+  </div>
+  </div>
+  </footer>
+<!-- End Footer -->
+<!-- link jquery liprary -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<!-- Start header animation -->
+<script>
+  //start code animation
+      var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeight = $('header').outerHeight();
+	$(window).scroll(function(event){
+	   didScroll = true;
+	});
+
+	setInterval(function() {
+	   if (didScroll) {
+	       hasScrolled();
+	       didScroll = false;
+	   }
+	}, 250);
+
+	function hasScrolled() {
+	   var st = $(this).scrollTop();
+	   
+	   // Make sure they scroll more than delta
+	   if(Math.abs(lastScrollTop - st) <= delta)
+	       return;
+	   
+	   if (st > lastScrollTop && st > navbarHeight){
+	       // Scroll Down
+	       $('header').removeClass('nav-down').addClass('nav-up');
+	   } else {
+	       // Scroll Up
+	       if(st + $(window).height() < $(document).height()) {
+	           $('header').removeClass('nav-up').addClass('nav-down');
+	       }
+	   }
+	   
+	   lastScrollTop = st;
+	}
+    //End Code Animation
+</script>
+<!-- End Header Animation -->
+<!-- js file -->
+<script src="js/script.js"></script>
+<!-- aos liprary -->
+<script src="js/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
